@@ -56,7 +56,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 20, 20, 120),
-        children: [UpcomingRooms(upcomingRooms: upcomingRoomsList)],
+        children: [
+          UpcomingRooms(upcomingRooms: upcomingRoomsList),
+          const SizedBox(
+            height: 12,
+          ),
+          ...roomsList.map((e) => RoomCard(room: e))
+        ],
       ),
     );
   }
