@@ -1,4 +1,3 @@
-import 'package:clubhouse_clone/config/palette.dart';
 import 'package:clubhouse_clone/data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                     child: Icon(CupertinoIcons.add,
                         size: 21, color: Colors.white)),
                 TextSpan(
-                    text: ' Start room',
+                    text: ' Start a room',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
